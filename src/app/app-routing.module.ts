@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'dia',
+    path: 'dia/:id',
     loadChildren: () => import('./dia/dia.module').then( m => m.DiaPageModule)
   },
 ];
