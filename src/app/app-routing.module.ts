@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./dia/dia.module').then( m => m.DiaPageModule)
   },
   {
-    path: 'comida',
+    path: 'comida/:id',
     loadChildren: () => import('./comida/comida.module').then( m => m.ComidaPageModule)
   },
 ];

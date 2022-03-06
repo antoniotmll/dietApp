@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dia',
   templateUrl: './dia.page.html',
   styleUrls: ['./dia.page.scss'],
 })
-export class DiaPage implements OnInit {
+export class DiaPage {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+  showLunchPage(id): void {
+    this.router.navigate(['/comida', id]);
   }
 
 }

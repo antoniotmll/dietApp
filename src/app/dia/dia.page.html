@@ -7,9 +7,9 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
     <ion-item>
-        <ion-label button="buttonClick()">
+        <ion-label button (click)="showLunchPage(1)">
             Desayuno
         </ion-label>
     </ion-item>
