@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'dia/:id',
     loadChildren: () => import('./dia/dia.module').then( m => m.DiaPageModule)
   },
+  {
+    path: 'comida',
+    loadChildren: () => import('./comida/comida.module').then( m => m.ComidaPageModule)
+  },
 ];
 
 @NgModule({
