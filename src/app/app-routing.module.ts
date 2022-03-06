@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'dia',
+    loadChildren: () => import('./dia/dia.module').then( m => m.DiaPageModule)
+  },
 ];
 
 @NgModule({
