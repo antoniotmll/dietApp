@@ -7,14 +7,15 @@ import { Injectable } from '@angular/core';
 export class ComidaService {
 
   constructor() { }
-  
+
   private comida: {
     id: string,
     nombre: string,
     ingredientes: string
   };
 
-  getComida() {
+
+  getComida(): any {
     return this.comida;
   }
 }
