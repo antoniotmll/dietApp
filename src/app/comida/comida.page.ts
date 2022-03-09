@@ -14,4 +14,7 @@ export class ComidaPage {
     this.listaComida = comida.getComida();
    }
    
+   getComida(id): any {
+     return this.listaComida[id];
+   }
 }
