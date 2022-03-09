@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ComidaService } from '../api/comida.service';
 
 @Component({
   selector: 'app-comida',
@@ -8,7 +7,8 @@ import { ComidaService } from '../api/comida.service';
 })
 export class ComidaPage {
 
-  constructor(private comida: ComidaService) {
-    this.listaComida = comida.getComida();
+  constructor() {
+
    }
+  
 }
