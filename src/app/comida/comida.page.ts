@@ -8,13 +8,7 @@ import { ComidaService } from '../api/comida.service';
 })
 export class ComidaPage {
 
-  listaComida: any[];
-
   constructor(private comida: ComidaService) {
     this.listaComida = comida.getComida();
-   }
-   
-   getComida(id): any {
-     return this.listaComida[id];
    }
 }

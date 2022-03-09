@@ -10,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DiaPage implements OnInit{
 
+  listaComida: any[];
+
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute) { }
 
@@ -19,5 +21,9 @@ export class DiaPage implements OnInit{
 
   ngOnInit(): void {
       const id = this.activatedRoute.snapshot.paramMap.get('id');
+  }
+
+  getComida(id): any {
+    return this.listaComida[id];
   }
 }
