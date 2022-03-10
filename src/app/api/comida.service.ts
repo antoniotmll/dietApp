@@ -544,7 +544,13 @@ export class ComidaService {
   };
 
 
-  getComida(): any {
+  // returns list 
+  getComidas(): any {
     return this.comida;
+  }
+
+  // returns element by id
+  getComida(id): any {
+      return this.comida[id];
   }
 }

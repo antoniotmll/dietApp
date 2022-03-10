@@ -7,7 +7,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<!-- <ion-content [fullscreen]="true">
     <ion-item>
         <ion-label button (click)="showLunchPage(1)">
             Desayuno
@@ -32,5 +32,11 @@
         <ion-label button="buttonClick()">
             Cena
         </ion-label>
+    </ion-item>
+</ion-content> -->
+
+<ion-content>
+    <ion-item *ngFor="let comida of listaComida; index as id" (click)="showLunchPage(id)" detail>
+        <!-- <ion-label>TODO</ion-label> -->
     </ion-item>
 </ion-content>
