@@ -14,9 +14,8 @@ export class DiaPage implements OnInit{
   listaComida: any[];
 
   constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
-              private comida: ComidaService) { 
-                this.listaComida = comida.getComida();
+              private activatedRoute: ActivatedRoute){
+                
               }
 
   showLunchPage(id): void {
