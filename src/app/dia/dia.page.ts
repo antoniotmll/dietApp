@@ -25,8 +25,4 @@ export class DiaPage implements OnInit{
   ngOnInit(): void {
       const id = this.activatedRoute.snapshot.paramMap.get('id');
   }
-
-  getComida(id): any {
-    return this.listaComida[id];
-  }
 }
