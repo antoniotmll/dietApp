@@ -6,7 +6,6 @@ DietApp it's an application to have control over your diet and your weight.
 
 * [Ionic Framework](https://ionicframework.com/)
 
----
 
 ## Getting Started
 
@@ -24,3 +23,8 @@ DietApp it's an application to have control over your diet and your weight.
    ```sh
    npm install
    ```
+
+### Deploy
+ ```
+ ionc serve --lab
+````
