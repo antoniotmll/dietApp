@@ -26,5 +26,5 @@ DietApp it's an application to have control over your diet and your weight.
 
 ### Deploy
  ```
- ionc serve --lab
+ ionic serve --lab
 ````
